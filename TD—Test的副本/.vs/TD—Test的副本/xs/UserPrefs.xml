@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{9FE7482D-C125-2809-4E97-8E32E9F5E105}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameMenu.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GameMenu.cs" Line="30" Column="35" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TD—Test的副本" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="GameMenu.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f0bec7d0-b805-426e-b79a-6ee81545c00e" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

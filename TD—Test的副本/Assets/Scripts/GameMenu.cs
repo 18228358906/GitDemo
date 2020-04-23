@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameMenu : MonoBehaviour
 {
-
+    public GameObject CourseUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +20,14 @@ public class GameMenu : MonoBehaviour
     public void OnStartGame()
     {
         SceneManager.LoadScene(1);
+    }
+    public  void OnCourse()
+    {
+        CourseUI.SetActive(true);
+    }
+    public void CourseUIReturn()
+    {
+        CourseUI.SetActive(false);
     }
     public void OnExitGame()
     {
