@@ -28,9 +28,11 @@ public class Turret : MonoBehaviour
     public float damageRate=70;
     public LineRenderer laserRender;
     public GameObject laserEffect;
+   
     private void Start()
     {
         timer = attackRateTime;
+       
     }
     private void Update()
     {
@@ -54,7 +56,7 @@ public class Turret : MonoBehaviour
             if (enemys .Count> 0)
             {
                 laserRender.SetPositions(new Vector3[] { firPositon.position, enemys[0].transform.position });
-                enemys[0].GetComponent<Enemy>().TakeDamage(damageRate * Time.deltaTime);
+                enemys[0].GetComponent<Enemy>().TakeDamage(damageRate* Time.deltaTime);
                 laserEffect.transform.position = enemys[0].transform.position;
                 Vector3 pos = transform.position;
                 pos.y = enemys[0].transform.position.y;

@@ -16,15 +16,21 @@ public class BuildManager : MonoBehaviour
     public GameObject upgradeCanvas;
     public Button buttonUpgrade;
     private MapCube selectedMapCube;//表示当前选择的炮台（场景中的游戏物体）
-    void ChangeMoney(int change=0)
+    
+    void ChangeMoney(int change = 0)
     {
         money += change;
-        moneyText.text ="$"+money;
+        moneyText.text = "$" + money;
     }
-    
-
+    public void GetMoney(int getmoney=0)
+    {
+        money += getmoney;
+        moneyText.text = "$" + money;
+    }
+   
     void Update()
     {
+        
         if (Input.GetMouseButtonDown(0))
         {
             if (EventSystem.current.IsPointerOverGameObject()==false)

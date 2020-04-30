@@ -12,12 +12,15 @@ public class Enemy : MonoBehaviour
     public Slider hpSlider;
     private Transform[] positions;
     private int index = 0;
+    public float magicalDefence=30;
+    public bool enemyLive=true;
     // Start is called before the first frame update
     void Start()
     {
         positions = Waypoints.positions;
         totalHp = hp;
         //hpSlider = GetComponentsInChildren<Slider>();
+       
     }
 
     // Update is called once per frame
@@ -50,9 +53,11 @@ public class Enemy : MonoBehaviour
     }
     public void TakeDamage(float damage)
     {
+        
         if (hp <= 0) return;
         hp -= damage;
         hpSlider.value = hp / totalHp;
+       
         if (hp <= 0)
         {
             Die();
@@ -60,9 +65,12 @@ public class Enemy : MonoBehaviour
     }
     void Die()
     {
-        GameObject effect= GameObject.Instantiate(explosionEffect, transform.position, transform.rotation);
+        enemyLive = false;
+        GameObject effect = GameObject.Instantiate(explosionEffect, transform.position, transform.rotation);
         Destroy(effect, 1.5f);
         Destroy(this.gameObject);
-    }
+        
+    }   
+    
 }
     
